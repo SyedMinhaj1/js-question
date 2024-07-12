@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="question.css">
+</head>
+
+<body>
+    <main>
+        <div class="sbtn">
+            <button type="submit" id="sect1" class="secbtn">Section 1</button>
+            <button type="submit" id="sect2" class="secbtn">Section 2</button>
+            <button type="submit" id="sect3" class="secbtn">Section 3</button>
+        </div>
+        <section class="sec1">
+            <h1 id="headsec">Section 1</h1>
+            <!-- Question 1 -->
+            <div class="qtn">
+                <h1>Question No 1</h1>
+                <h2>Reverse a string without using the built-in reverse() method</h2>
+                <label for="inputString">Enter string:</label><br><br>
+                <input type="text" id="one" placeholder="Enter String"><br>
+                <button id="oneButton" class="solvebtn">Reverse String</button>
+                <br>
+                <h3 id="oneans"></h3>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="qtn">
+                <h1>Question No 2</h1>
+                <h2>Count the number of vowels in a given string</h2>
+                <label for="two">Enter string:</label><br><br>
+                <input type="text" id="two" placeholder="Enter String"><br>
+                <button id="twoButton" class="solvebtn">Count Vowels</button>
+                <br>
+                <h3 id="twoans"></h3>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="qtn">
+                <h1>Question No 3</h1>
+                <h2>Convert the first letter of each word in a sentence to uppercase</h2>
+                <label for="three">Enter string:</label><br><br>
+                <input type="text" id="three" placeholder="Enter String"><br>
+                <button id="threeButton" class="solvebtn">Capital</button>
+                <br>
+                <h3 id="threeans"></h3>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="qtn">
+                <h1>Question No 4</h1>
+                <h2>Check if a string is a palindrome</h2>
+                <label for="four">Enter string:</label><br><br>
+                <input type="text" id="four" placeholder="Enter String"><br>
+                <button id="fourButton" class="solvebtn">Check Palindrome</button>
+                <br>
+                <h3 id="fourans"></h3>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="qtn">
+                <h1>Question No 5</h1>
+                <h2>Find the sum of all positive numbers in an array</h2>
+                <label for="five">Enter array (comma-separated):</label><br><br>
+                <input type="text" id="five" placeholder="Enter Array"><br>
+                <button id="fiveButton" class="solvebtn">Sum Positive Numbers</button>
+                <br>
+                <h3 id="fiveans"></h3>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="qtn">
+                <h1>Question No 6</h1>
+                <h2>Find the index of the first occurrence of a specific element in an array</h2>
+                <label for="six">Enter array (comma-separated):</label><br><br>
+                <input type="text" id="six" placeholder="Enter Array"><br>
+                <label for="sixElement">Enter element:</label><br><br>
+                <input type="text" id="sixElement" placeholder="Enter Element"><br>
+                <button id="sixButton" class="solvebtn">Find First Occurrence</button>
+                <br>
+                <h3 id="sixans"></h3>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="qtn">
+                <h1>Question No 7</h1>
+                <h2>Remove all duplicates from an array without built-in methods</h2>
+                <label for="seven">Enter array (comma-separated):</label><br><br>
+                <input type="text" id="seven" placeholder="Enter Array"><br>
+                <button id="sevenButton" class="solvebtn">Remove Duplicates</button>
+                <br>
+                <h3 id="sevenans"></h3>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="qtn">
+                <h1>Question No 8</h1>
+                <h2>Sort the array in ascending and descending without built-in methods</h2>
+                <label for="eight">Enter array (comma-separated):</label><br><br>
+                <input type="text" id="eight" placeholder="Enter Array"><br>
+                <button id="eightButtonAsc" class="solvebtn">Sort Ascending</button>
+                <button id="eightButtonDesc" class="solvebtn">Sort Descending</button>
+                <br>
+                <h3 id="eightans"></h3>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="qtn">
+                <h1>Question No 9</h1>
+                <h2>Print all even numbers between 1 and 20 using a while loop</h2>
+                <button id="nineButton" class="solvebtn">Print Even Numbers</button>
+                <br>
+                <h3 id="nineans"></h3>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="qtn">
+                <h1>Question No 10</h1>
+                <h2>Calculate the factorial of a number using a do-while loop</h2>
+                <label for="ten">Enter number:</label><br><br>
+                <input type="text" id="ten" placeholder="Enter Number"><br>
+                <button id="tenButton" class="solvebtn">Calculate Factorial</button>
+                <br>
+                <h3 id="tenans"></h3>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="qtn">
+                <h1>Question No 11</h1>
+                <h2>Iterate through the properties of an object using a for-in loop</h2>
+                <label for="eleven">Enter object (key:value pairs comma-separated):</label><br><br>
+                <input type="text" id="eleven" placeholder="Enter Object"><br>
+                <button id="elevenButton" class="solvebtn">Iterate Object</button>
+                <br>
+                <h3 id="elevenans"></h3>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="qtn">
+                <h1>Question No 12</h1>
+                <h2>Loop through an array using a for-of loop and double each element</h2>
+                <label for="twelve">Enter array (comma-separated):</label><br><br>
+                <input type="text" id="twelve" placeholder="Enter Array"><br>
+                <button id="twelveButton" class="solvebtn">Double Elements</button>
+                <br>
+                <h3 id="twelveans"></h3>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="qtn">
+                <h1>Question No 13</h1>
+                <h2>Check if a number is even or odd and return a corresponding message</h2>
+                <label for="thirteen">Enter number:</label><br><br>
+                <input type="text" id="thirteen" placeholder="Enter Number"><br>
+                <button id="thirteenButton" class="solvebtn">Check Even/Odd</button>
+                <br>
+                <h3 id="thirteenans"></h3>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="qtn">
+                <h1>Question No 14</h1>
+                <h2>Find the maximum of three numbers using nested ternary operators</h2>
+                <label for="fourteenA">Enter number 1:</label><br><br>
+                <input type="text" id="fourteenA" placeholder="Enter Number 1"><br>
+                <label for="fourteenB">Enter number 2:</label><br><br>
+                <input type="text" id="fourteenB" placeholder="Enter Number 2"><br>
+                <label for="fourteenC">Enter number 3:</label><br><br>
+                <input type="text" id="fourteenC" placeholder="Enter Number 3"><br>
+                <button id="fourteenButton" class="solvebtn">Find Maximum</button>
+                <br>
+                <h3 id="fourteenans"></h3>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="qtn">
+                <h1>Question No 15</h1>
+                <h2>Determine if a year is a leap year or not</h2>
+                <label for="fifteen">Enter year:</label><br><br>
+                <input type="text" id="fifteen" placeholder="Enter Year"><br>
+                <button id="fifteenButton" class="solvebtn">Check Leap Year</button>
+                <br>
+                <h3 id="fifteenans"></h3>
+            </div>
+        </section>
+        <section class="sec2">
+            <h1 id="headsec">Section 2</h1>
+            <!-- Question 1 -->
+            <div class="qtn">
+                <h1>Question No 1</h1>
+                <h2>Ternary operator to determine "Pass" or "Fail"</h2>
+                <label for="sixteen">Enter score:</label><br><br><br>
+                <input type="text" id="sixteen" placeholder="Enter Score"><br>
+                <button id="sixteenButton" class="solvebtn">Check Result</button>
+                <br>
+                <h3 id="sixteenans"></h3>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="qtn">
+                <h1>Question No 2</h1>
+                <h2>Optional chaining operator (?.)</h2>
+                <button id="seventeenButton" class="solvebtn">Access Property</button>
+                <br>
+                <h3 id="seventeenans"></h3>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="qtn">
+                <h1>Question No 3</h1>
+                <h2>for...in loop vs for...of loop</h2>
+                <button id="eighteenButton" class="solvebtn">Iterate</button>
+                <br>
+                <h3 id="eighteenans"></h3>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="qtn">
+                <h1>Question No 4</h1>
+                <h2>Function to calculate average</h2>
+                <label for="ninteen">Enter numbers separated by comma:</label><br><br><br>
+                <input type="text" id="ninteen" placeholder="Enter Numbers"><br>
+                <button id="ninteenButton" class="solvebtn">Calculate Average</button>
+                <br>
+                <h3 id="ninteenans"></h3>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="qtn">
+                <h1>Question No 5</h1>
+                <h2>Closures in JavaScript</h2>
+                <button id="twentyButton" class="solvebtn">Show Outer Variable</button>
+                <br>
+                <h3 id="twentyans"></h3>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="qtn">
+                <h1>Question No 6</h1>
+                <h2>Object with method to calculate average grades</h2>
+                <button id="twentyoneButton" class="solvebtn">Calculate Average Grade</button>
+                <br>
+                <h3 id="twentyoneans"></h3>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="qtn">
+                <h1>Question No 7</h1>
+                <h2>Cloning objects in JavaScript</h2>
+                <button id="twentytwoButton" class="solvebtn">Clone Object</button>
+                <br>
+                <h3 id="twentytwoans"></h3>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="qtn">
+                <h1>Question No 8</h1>
+                <h2>Iterating over an array of numbers to log even or odd using ternary operator</h2>
+                <button id="twentythreeButton" class="solvebtn">Check Numbers</button>
+                <br>
+                <h3 id="twentythreeans"></h3>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="qtn">
+                <h1>Question No 9</h1>
+                <h2>Differences between for, while, and do...while loops</h2>
+                <button id="twentyfourButton" class="solvebtn">Show Differences</button>
+                <br>
+                <h3 id="twentyfourans"></h3>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="qtn">
+                <h1>Question No 10</h1>
+                <h2>Example of optional chaining within a loop</h2>
+                <button id="twentyfiveButton" class="solvebtn">Access City</button>
+                <br>
+                <h3 id="twentyfiveans"></h3>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="qtn">
+                <h1>Question No 11</h1>
+                <h2>for...in loop to iterate over object properties</h2>
+                <button id="twentysixButton" class="solvebtn">Show Properties</button>
+                <br>
+                <h3 id="twentysixans"></h3>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="qtn">
+                <h1>Question No 12</h1>
+                <h2>break and continue statements</h2>
+                <button id="twentysevenButton" class="solvebtn">Show Statements</button>
+                <br>
+                <h3 id="twentysevenans"></h3>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="qtn">
+                <h1>Question No 13</h1>
+                <h2>Function to calculate tax using ternary operator</h2>
+                <label for="twentyeight">Enter income:</label><br><br><br>
+                <input type="text" id="twentyeight" placeholder="Enter Income"><br>
+                <button id="twentyeightButton" class="solvebtn">Calculate Tax</button>
+                <br>
+                <h3 id="twentyeightans"></h3>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="qtn">
+                <h1>Question No 14</h1>
+                <h2>Object with method</h2>
+                <button id="twentynineButton" class="solvebtn">Start Engine</button>
+                <br>
+                <h3 id="twentynineans"></h3>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="qtn">
+                <h1>Question No 15</h1>
+                <h2>Differences between regular functions and arrow functions</h2>
+                <button id="thirtyButton" class="solvebtn">Show Differences</button>
+                <br>
+                <h3 id="thirtyans"></h3>
+            </div>
+        </section>
+
+        <section class="sec3">
+            <h1 id="headsec">Section 3</h1>
+            <div class="qtn">
+                <h1>Question No 1</h1>
+                <h2>Map Transformation</h2>
+                <label for="q1Input">Enter numbers separated by commas:</label><br><br>
+                <input type="text" id="q1Input" placeholder="e.g., 1, 2, 3"><br>
+                <button id="q1Button" class="solvebtn">Square Elements</button>
+                <br>
+                <h3 id="q1Output"></h3>
+            </div>
+
+            <!-- Question 2: Filter and Map Combination -->
+            <div class="qtn">
+                <h1>Question No 2</h1>
+                <h2>Filter and Map Combination</h2>
+                <label for="q2Input">Enter strings separated by commas:</label><br><br>
+                <input type="text" id="q2Input" placeholder="e.g., apple, banana, orange"><br>
+                <button id="q2Button" class="solvebtn">Filter and Capitalize</button>
+                <br>
+                <h3 id="q2Output"></h3>
+            </div>
+
+            <!-- Question 3: Sorting Objects -->
+            <div class="qtn">
+                <h1>Question No 3</h1>
+                <h2>Sorting Objects</h2>
+                <button id="q3Button" class="solvebtn">Sort Objects by Price (Descending)</button>
+                <br>
+                <h3 id="q3Output"></h3>
+            </div>
+
+            <!-- Question 4: Reduce for Aggregation -->
+            <div class="qtn">
+                <h1>Question No 4</h1>
+                <h2>Reduce for Aggregation</h2>
+                <label for="q4Input">Enter numbers separated by commas:</label><br><br>
+                <input type="text" id="q4Input" placeholder="e.g., 1, 2, 3"><br>
+                <button id="q4Button" class="solvebtn">Sum Even Numbers</button>
+                <br>
+                <h3 id="q4Output"></h3>
+            </div>
+
+            <!-- Question 5: Find and Modify -->
+            <div class="qtn">
+                <h1>Question No 5</h1>
+                <h2>Find and Modify</h2>
+                <button id="q5Button" class="solvebtn">Find and Update Status</button>
+                <br>
+                <h3 id="q5Output"></h3>
+            </div>
+
+            <!-- Question 6: Chaining Methods -->
+            <div class="qtn">
+                <h1>Question No 6</h1>
+                <h2>Chaining Methods</h2>
+                <label for="q6Input">Enter numbers separated by commas:</label><br><br>
+                <input type="text" id="q6Input" placeholder="e.g., -1, 2, 3"><br>
+                <button id="q6Button" class="solvebtn">Average of Positive Numbers</button>
+                <br>
+                <h3 id="q6Output"></h3>
+            </div>
+
+            <!-- Question 7: Conditional Filtering -->
+            <div class="qtn">
+                <h1>Question No 7</h1>
+                <h2>Conditional Filtering</h2>
+                <button id="q7Button" class="solvebtn">Filter Adults (age >= 18)</button>
+                <br>
+                <h3 id="q7Output"></h3>
+            </div>
+
+            <!-- Question 8: Advanced Sorting -->
+            <div class="qtn">
+                <h1>Question No 8</h1>
+                <h2>Advanced Sorting</h2>
+                <label for="q8Input">Enter strings separated by commas:</label><br><br>
+                <input type="text" id="q8Input" placeholder="e.g., apple, banana, orange"><br>
+                <button id="q8Button" class="solvebtn">Sort by Length (Ascending)</button>
+                <br>
+                <h3 id="q8Output"></h3>
+            </div>
+
+            <!-- Question 9: Nested Array Operations -->
+            <div class="qtn">
+                <h1>Question No 9</h1>
+                <h2>Nested Array Operations</h2>
+                <button id="q9Button" class="solvebtn">Flatten and Sum Nested Arrays</button>
+                <br>
+                <h3 id="q9Output"></h3>
+            </div>
+
+            <!-- Question 10: Error Handling with Find -->
+            <div class="qtn">
+                <h1>Question No 10</h1>
+                <h2>Error Handling with Find</h2>
+                <button id="q10Button" class="solvebtn">Find Element with Error Handling</button>
+                <br>
+                <h3 id="q10Output"></h3>
+            </div>
+
+            <!-- Question 11: Map Method -->
+            <div class="qtn">
+                <h1>Question No 11</h1>
+                <h2>Map Method</h2>
+                <button id="q11Button" class="solvebtn">Example of Map Method</button>
+                <br>
+                <h3 id="q11Output"></h3>
+            </div>
+
+            <!-- Question 12: Filter Method -->
+            <div class="qtn">
+                <h1>Question No 12</h1>
+                <h2>Filter Method</h2>
+                <button id="q12Button" class="solvebtn">Example of Filter Method</button>
+                <br>
+                <h3 id="q12Output"></h3>
+            </div>
+
+            <!-- Question 13: Sort Method -->
+            <div class="qtn">
+                <h1>Question No 13</h1>
+                <h2>Sort Method</h2>
+                <button id="q13Button" class="solvebtn">Example of Sort Method</button>
+                <br>
+                <h3 id="q13Output"></h3>
+            </div>
+
+            <!-- Question 14: Reduce Method -->
+            <div class="qtn">
+                <h1>Question No 14</h1>
+                <h2>Reduce Method</h2>
+                <button id="q14Button" class="solvebtn">Example of Reduce Method</button>
+                <br>
+                <h3 id="q14Output"></h3>
+            </div>
+
+            <!-- Question 15: Find Method -->
+            <div class="qtn">
+                <h1>Question No 15</h1>
+                <h2>Find Method</h2>
+                <button id="q15Button" class="solvebtn">Example of Find Method</button>
+                <br>
+                <h3 id="q15Output"></h3>
+            </div>
+        </section>
+
+        <div class="mbtn">
+            <!-- button for forward and reverse  -->
+            <button class="for" type="submit">FORWARD</button>
+            <button class="bck" type="submit">BACK</button><br>
+        </div>
+    </main>
+
+    <script src="question.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initially show section 1 and hide sections 2 and 3
+            $(".sec1").show();
+            $(".sec2").hide();
+            $(".sec3").hide();
+
+            // Function to handle switching between sections
+            $("#sect1").click(function () {
+                $(".sec1").show();
+                $(".sec2").hide();
+                $(".sec3").hide();
+                index = 0; // Reset index for Section 1
+                divsSection1.hide(); // Hide all questions in Section 1
+                $(divsSection1[index]).show(); // Show the first question of Section 1
+            });
+
+            $("#sect2").click(function () {
+                $(".sec1").hide();
+                $(".sec2").show();
+                $(".sec3").hide();
+                index = 0; // Reset index for Section 2
+                divsSection2.hide(); // Hide all questions in Section 2
+                $(divsSection2[index]).show(); // Show the first question of Section 2
+            });
+
+            $("#sect3").click(function () {
+                $(".sec1").hide();
+                $(".sec2").hide();
+                $(".sec3").show();
+                index = 0; // Reset index for Section 3
+                divsSection3.hide(); // Hide all questions in Section 3
+                $(divsSection3[index]).show(); // Show the first question of Section 3
+            });
+
+            // Functionality for forward and backward buttons within questions
+            var divsSection1 = $(".sec1 .qtn"); // Questions in Section 1
+            var divsSection2 = $(".sec2 .qtn"); // Questions in Section 2
+            var divsSection3 = $(".sec3 .qtn"); // Questions in Section 3
+            var index = 0;
+
+            // Hide all questions initially except the first one of Section 1
+            divsSection1.hide();
+            divsSection2.hide();
+            divsSection3.hide();
+            $(divsSection1[index]).show(); // Show the first question of Section 1 initially
+
+            $(".for").click(function () {
+                if ($(".sec1").is(":visible")) {
+                    if (index < divsSection1.length - 1) {
+                        $(divsSection1[index]).hide();
+                        index++;
+                        $(divsSection1[index]).show();
+                    }
+                } else if ($(".sec2").is(":visible")) {
+                    if (index < divsSection2.length - 1) {
+                        $(divsSection2[index]).hide();
+                        index++;
+                        $(divsSection2[index]).show();
+                    }
+                } else if ($(".sec3").is(":visible")) {
+                    if (index < divsSection3.length - 1) {
+                        $(divsSection3[index]).hide();
+                        index++;
+                        $(divsSection3[index]).show();
+                    }
+                }
+            });
+
+            $(".bck").click(function () {
+                if ($(".sec1").is(":visible")) {
+                    if (index > 0) {
+                        $(divsSection1[index]).hide();
+                        index--;
+                        $(divsSection1[index]).show();
+                    }
+                } else if ($(".sec2").is(":visible")) {
+                    if (index > 0) {
+                        $(divsSection2[index]).hide();
+                        index--;
+                        $(divsSection2[index]).show();
+                    }
+                } else if ($(".sec3").is(":visible")) {
+                    if (index > 0) {
+                        $(divsSection3[index]).hide();
+                        index--;
+                        $(divsSection3[index]).show();
+                    }
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
